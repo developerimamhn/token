@@ -9,13 +9,13 @@ const Page4 = () => {
     return (
         <div className='!bg-[#000000] '>
             <div className='relative '> 
-                <div className='xl:container'>
+                <div className=' pr-[10%]'>
                     <div className='flex justify-between items-center lg:flex-row flex-col lg:gap-0 gap-[30px]'>
-                        <div className='flex-1 '>
-                            <Image className='' src={image13} alt=''/>
+                        <div className=''>
+                            <Image className='h-full w-full' src={image13} alt=''/>
                         </div >
                         <div className='flex-1 flex justify-end px-[24px] sm:px-[0]'> 
-                        <div className='flex items-start flex-1 flex-col'>
+                        <div className='flex items-start flex-1 flex-col xl:py-[40px] 2xl:py-[60px]'>
                     <h2 className='Printing !text-[25px] sm:!text-[30px] md:!text-[40px] lg:!text-[45px] xl:!text-[55px] 2xl:!text-[64px] !text-start'>Secure funding with us all in one tools</h2>
                     <p className='sinceyear mt-[16px] sm:mt-[20px] lg:mt-[32px]'>Don't let your trading skills go unrewarded. prove yourself and secure funding with our risk-free plans.</p>
                     <div className='borderder my-[20px] sm:my-[25px] lg:my-[32px]'></div>
@@ -66,11 +66,11 @@ const Page4 = () => {
                 <div className='container mx-auto py-[40px] md:py-[60px] lg:py-[90px] xl:py-[120px] 2xl:py-[154px]'>
                     <div className="grid lg:grid-cols-3 gap-4">
                         <div className="boxinglast lg:col-span-2 h-[479px] rounded-[20px] relative">
-                            <Image className="w-full h-full object-cover rounded-[20px] " src={image14} alt="Image 14" />
+                            <Image className="grayscale  w-full h-full object-cover rounded-[20px] " src={image14} alt="Image 14" />
                             <div className='absolute bottom-0 ml-[18px] sm:ml-[20px] md:ml-[24px] lg:ml-[28px] xl:ml-[32px] mb-[20px] sm:mb-[24px] md:mb-[28px] lg:mb-[32px] xl:mb-[37px]'>
                             <h3 className='fasterscaling'>The Fastest Scaling</h3>
                             <p className='sinceyear mt-[16px] sm:mt-[20px] lg:mt-[24px] mb-[18px] sm:mb-[20px] md:mb-[24px] lg:mb-[28px] xl:mb-[32px] lg:mr-[15%] mr-[18px] sm:mr-[20px] md:mr-[24px]'>At our prop firm, sky traders earn up to 100% of simulated profits with no complicated time limits. We double your account balance each time you hit a scaling objective.</p>
-                            <button className='skayling'>Start Sky Challenge <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <button className='skayling group'>Start Sky Challenge <svg className='-ml-[40px] opacity-0 group-hover:opacity-100 group-hover:ml-0 duration-200' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M14.43 5.93018L20.5 12.0002L14.43 18.0702" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M3.5 12H20.33" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
@@ -78,11 +78,11 @@ const Page4 = () => {
                                 </div> 
                             </div>
                         <div className="boxinglast lg:col-span-1 h-[479px] rounded-[20px] relative">
-                            <Image className="h-full w-full object-cover rounded-[20px]" src={image15} alt="Image 15" />
+                            <Image className="grayscale  h-full w-full object-cover rounded-[20px]" src={image15} alt="Image 15" />
                             <div className='absolute bottom-0 ml-[18px] sm:ml-[20px] md:ml-[24px] lg:ml-[28px] xl:ml-[32px] mb-[20px] sm:mb-[24px] md:mb-[28px] lg:mb-[32px] xl:mb-[37px]'>
                             <h3 className='fasterscaling'>Market News Report</h3>
                             <p className='sinceyear mt-[16px] sm:mt-[20px] lg:mt-[24px] mb-[18px] sm:mb-[20px] md:mb-[24px] lg:mb-[28px] xl:mb-[32px] lg:mr-[15%] mr-[18px] sm:mr-[20px] md:mr-[24px] '>Get our FREE comprehensive fundamentals & technical news report to keep you up to date with the latest economic news.</p>
-                            <button className='skayling'>Start Sky Challenge <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <button className='skayling group'>Start Sky Challenge <svg className='-ml-[40px] opacity-0 group-hover:opacity-100 group-hover:ml-0 duration-200' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M14.43 5.93018L20.5 12.0002L14.43 18.0702" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M3.5 12H20.33" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -93,7 +93,7 @@ const Page4 = () => {
                     <div>
                         <div className='w-full mt-4'>
                         <div className="boxinglast col-span-2 h-[479px] rounded-[20px] relative">
-                            <Image className="w-full h-full object-cover rounded-[20px] " src={image16} alt="Image 14" />
+                            <Image className="grayscale  w-full h-full object-cover rounded-[20px] " src={image16} alt="Image 14" />
                             <div className='absolute bottom-0 ml-[18px] sm:ml-[20px] md:ml-[24px] lg:ml-[28px] xl:ml-[32px] mb-[20px] sm:mb-[24px] md:mb-[28px] lg:mb-[32px] xl:mb-[37px]'>
                             <h3 className='fasterscaling'>SPF Academy</h3>
                             <p className='sinceyear mt-[16px] sm:mt-[20px] lg:mt-[24px] mb-[18px] sm:mb-[20px] md:mb-[24px] lg:mb-[28px] xl:mb-[32px] lg:mr-[40%] mr-[18px] sm:mr-[20px] md:mr-[24px]'>Regardless of your experience, our prop firm offers exclusive courses to help traders develop the skills they need to succeed and earn rewards, covering essential topics like risk management, trading strategies, and psychology.</p> 

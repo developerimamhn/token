@@ -27,6 +27,7 @@ const Page5 = () => {
                     nextEl: '.nextRef',
                   }}
                   modules={[Navigation]}
+                  loop={true}
                   slidesPerView={1}
                   breakpoints={{
                     640: { slidesPerView: 1 },

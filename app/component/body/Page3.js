@@ -590,7 +590,7 @@ const Page3 = () => {
                     <Image
                         src={image.src}
                         alt={image.caption}
-                        className=""
+                        className="grayscale "
                     />
                     </div>
                 ))}

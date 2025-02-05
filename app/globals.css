@@ -35,7 +35,7 @@ body {
     @apply hover:text-[#ABE004] text-[12px] sm:text-[15px] xl:text-[18px] 2xl:text-[20px] duration-300 cursor-pointer
   }
   .contactusbtn{
-    @apply px-[16px] sm:px-[18px] md:px-[20px] lg:px-[24px] xl:px-[28px] 2xl:px-[32px] py-[11px] sm:py-[12px] md:py-[13px] lg:py-[14px] xl:py-[15px] 2xl:py-[16px]  cursor-pointer
+    @apply px-[16px] sm:px-[18px] md:px-[20px] lg:px-[24px] xl:px-[28px] 2xl:px-[32px] py-[11px] sm:py-[12px] md:py-[13px] lg:py-[14px] xl:py-[15px] 2xl:py-[16px]  
   }
   .contactusbtn{
     @apply hover:bg-[#fff] border-[#ffffff1f] duration-300 hover:text-[#ABE004] text-[11px] sm:text-[12px] xl:text-[13px] 2xl:text-[14px]
@@ -216,6 +216,12 @@ body {
   .salarypointheader{
     border-radius: 32px;
     border: 1px solid rgba(255, 255, 255, 0.08);
+    /* background: linear-gradient(101deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.08) 53.5%, rgba(255, 255, 255, 0.02) 100%); */
+    transition: 0.2s;
+  }
+  .salarypointheader:hover{
+    /* border-radius: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.08); */
     background: linear-gradient(101deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.08) 53.5%, rgba(255, 255, 255, 0.02) 100%);
   }
   .salarypointer{
@@ -388,10 +394,10 @@ background: var(--Text-white, #FEFFFF);
   }
   .challenfunding{
     border-radius: 104px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    background: linear-gradient(90deg, rgba(15, 16, 18, 0.10) 0%, rgba(15, 16, 18, 0.70) 53.5%, rgba(15, 16, 18, 0.10) 100%);
+    /* border: 1px solid rgba(255, 255, 255, 0.08); */
+    /* background: linear-gradient(90deg, rgba(15, 16, 18, 0.10) 0%, rgba(15, 16, 18, 0.70) 53.5%, rgba(15, 16, 18, 0.10) 100%); */
     padding: clamp(15px, 2vw, 10px) clamp(25px, 4vw, 40px);
-    color: var(--Paragraph, #9C9D9F);
+    /* color: var(--Paragraph, #9C9D9F); */
     leading-trim: both;
     text-edge: cap;
     font-family: "Helvetica Now Display";
@@ -400,6 +406,10 @@ background: var(--Text-white, #FEFFFF);
     font-weight: 300;
     line-height: 160%; /* 38.4px */
     letter-spacing: 0.96px;
+    border-radius: 104px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: linear-gradient(90deg, rgba(192, 252, 4, 0.01) 0%, rgba(192, 252, 4, 0.06) 53.57%, rgba(192, 252, 4, 0.01) 100%);
+    color: #C0FC04;
   }
   .challenfundings{
     border-radius: 104px;
@@ -417,10 +427,7 @@ background: var(--Text-white, #FEFFFF);
     letter-spacing: 0.96px;
   }
   .challenfunding:hover{
-    border-radius: 104px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    background: linear-gradient(90deg, rgba(192, 252, 4, 0.01) 0%, rgba(192, 252, 4, 0.06) 53.57%, rgba(192, 252, 4, 0.01) 100%);
-    color: #C0FC04;
+    
   }
   .accouno{
     color: #9C9D9F;
@@ -430,7 +437,7 @@ background: var(--Text-white, #FEFFFF);
     font-family: "PP Mori";
     font-size: clamp(15px, 2vw, 24px);
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 160%; /* 38.4px */
     letter-spacing: 0.96px;
   }
@@ -839,7 +846,7 @@ background: var(--Text-white, #FEFFFF);
     font-family: "PP Mori";
     font-size: clamp(16px, 3vw, 24px);
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: normal;
     letter-spacing: 0.96px;
     text-transform: uppercase;
@@ -852,7 +859,7 @@ background: var(--Text-white, #FEFFFF);
     color: #9C9D9F;
     font-family: "PP Mori";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 100%;
   }
   .contactusbtn{
