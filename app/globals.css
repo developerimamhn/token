@@ -4,13 +4,13 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0C0C0C;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0C0C0C;
+    --foreground: #0C0C0C;
   }
 }
 
@@ -18,4 +18,827 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: "PP Mori";
+  src: url(./font/PPMori-Extralight.otf), url(./font/PPMori-Regular.otf), url(./font/PPMori-SemiBold.otf);
+}
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: url(./font/HelveticaNowDisplay-Regular.ttf);
+}
+
+
+@layer base {
+  .Link-manu-bar{ 
+    @apply hover:text-[#ABE004] text-[12px] sm:text-[15px] xl:text-[18px] 2xl:text-[20px] duration-300
+  }
+  .contactusbtn{
+    @apply px-[16px] sm:px-[18px] md:px-[20px] lg:px-[24px] xl:px-[28px] 2xl:px-[32px] py-[11px] sm:py-[12px] md:py-[13px] lg:py-[14px] xl:py-[15px] 2xl:py-[16px] 
+  }
+  .contactusbtn{
+    @apply hover:bg-[#fff] border-[#ffffff1f] duration-300 hover:text-[#ABE004] text-[11px] sm:text-[12px] xl:text-[13px] 2xl:text-[14px]
+  }
+  .Construction{
+    @apply text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px] mb-[18px] sm:mb-[20px] md:mb-[25px] lg:mb-[30px] xl:mb-[35px] 2xl:mb-[40px]
+  }
+  .Printing{
+    @apply text-[33px] sm:text-[44px] md:text-[55px] lg:text-[66px] xl:text-[77px] 2xl:text-[84px]
+  }
+  .buttonstli{
+    @apply  mt-[30px] md:mt-[40px] xl:mt-[48px]
+  }
+  .catagroyimage{
+    @apply text-[30px] sm:text-[35px] md:text-[40px] lg:text-[45px] xl:text-[50px] 2xl:text-[54px]
+  }
+  .revoluction{
+    @apply text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px]
+  }
+  .aboutus{
+    @apply text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px]
+  }
+  .contaienraas3d{
+    @apply text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px]
+  }
+  .lineritems{
+    @apply pl-[33px] sm:pl-[44px] md:pl-[55px] lg:pl-[66px] xl:pl-[77px] 2xl:pl-[84px] pr-[44px] sm:pr-[55px] md:pr-[66px] lg:pr-[77px] xl:pr-[88px] 2xl:pr-[94px] pt-[30px] sm:pt-[35px] md:pt-[40px] lg:pt-[44px] xl:pt-[55px] 2xl:pt-[62px]
+  }
+  .salarypointheader{
+    @apply py-[18px] sm:py-[20px] md:py-[25px] lg:py-[30px] xl:py-[35px] 2xl:py-[40px] px-[14px] sm:px-[16px] md:px-[18px] lg:px-[20px] xl:px-[22px] 2xl:px-[24px]
+  }
+}
+
+@layer utilities {
+  .privacypolicy{
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "PP Mori";
+    font-size: clamp(8px, 2vw, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 17.6px */
+    opacity: 0.7;
+  }
+  .meedicalkitslist{
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "PP Mori";
+    font-size: clamp(12px, 2vw, 20px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 22px */
+    opacity: 0.8;
+  }
+  .compais{
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "PP Mori";
+    font-size: clamp(15px, 2vw, 24px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 26.4px */
+  }
+  .lastpadding{
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "PP Mori";
+    font-size: clamp(15px, 2vw, 24px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 26.4px */
+  }
+  .getfundernow{
+    color: #C0FC04;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Helvetica Now Display";
+    font-size: clamp(15px, 2vw, 24px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.96px;
+    text-transform: uppercase;
+  }
+  .getfounder{
+    border-radius: clamp(18px, 2vw, 32px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: linear-gradient(101deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.08) 53.5%, rgba(255, 255, 255, 0.04) 100%);
+  }
+  .deverlopaericon{
+    color: var(--Paragraph, #9C9D9F);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "PP Mori";
+    font-size: clamp(13px, 2vw, 18px);
+    font-style: normal;
+    font-weight: 100;
+    line-height: 140%; /* 25.2px */
+  }
+  .namaction{
+    color: var(--Text-white, #FEFFFF);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "PP Mori";
+    font-size: clamp(15px, 2vw, 24px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 33.6px */
+  }
+  .fuderiingas{
+    color: #FEFFFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "PP Mori";
+    font-size: clamp(17px, 2vw, 28px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 39.2px */
+  }
+  .tradingskils{
+    color: #9C9D9F;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "PP Mori";
+    font-size: clamp(15px, 2vw, 20px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 32px */
+    letter-spacing: 0.8px;
+  }
+  .treaderssteestee{
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Helvetica Now Display";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.56px;
+    background: radial-gradient(63.35% 163.11% at 50% 13.66%, #FFF 0%, #474848 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .skayling{
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "PP Mori";
+    font-size: clamp(15px, 2vw, 20px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 30px */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+  .fasterscaling{
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "PP Mori";
+    font-size: clamp(17px, 2vw, 28px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .boxinglastbg{
+    background: radial-gradient(49.99% 61.28% at 54.79% 3.03%, rgba(8, 9, 11, 0.00) 0%, #08090B 100%);
+  }
+  .salarypointheader{
+    border-radius: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: linear-gradient(101deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.08) 53.5%, rgba(255, 255, 255, 0.02) 100%);
+  }
+  .salarypointer{
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "PP Mori";
+    font-size: clamp(17px, 2vw, 28px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .salarypointerpa{
+    color: var(--Paragraph, #9C9D9F);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "PP Mori";
+    font-size: clamp(15px, 2vw, 20px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+  }
+  @keyframes float {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(2px, -2px);
+    }
+    100% {
+      transform: translate(-2px, 2px);
+    }
+  }
+  
+  .dot {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .lineritems{
+    border-radius: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: linear-gradient(101deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.08) 53.5%, rgba(255, 255, 255, 0.02) 100%);
+  }
+  .sinceyear{
+    color: var(--Paragraph, #9C9D9F);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "PP Mori";
+    font-size: clamp(15px, 2vw, 20px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .yearsnamess{
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "PP Mori";
+    font-size: clamp(15px, 2vw, 24px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .listingpoint{
+    color: var(--Text-white, #FEFFFF);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "PP Mori";
+    font-size: clamp(15px, 2vw, 20px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 32px */
+    letter-spacing: 0.8px;
+  }
+  .borderder{
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.00) 21.79%, rgba(255, 255, 255, 0.24) 50.27%, rgba(255, 255, 255, 0.00) 77.62%);
+    width: 100%;
+    height: 1px;
+  }
+  .profiletarget2{
+    color: var(--Text-white, #FEFFFF);
+    text-align: right;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Helvetica Now Display";
+    font-size: clamp(12px, 2vw, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0.64px;
+  }
+  .profiletarget{
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Helvetica Now Display";
+    font-size: clamp(15px, 2vw, 20px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    letter-spacing: 0.8px;
+  }
+  .profitsign2{
+    width: 40px;
+    height: 10px;
+    flex-shrink: 0;
+    border-radius: 40px;
+background: var(--Text-white, #FEFFFF);
+  }
+  .profitsign{
+    border-radius: 104px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.04) 53.5%, rgba(255, 255, 255, 0.02) 100%);
+    width: 100%;
+    height: 14px;
+  }
+  .verifyskill{
+    color: var(--Paragraph, #9C9D9F);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Helvetica Now Display";
+    font-size: clamp(13px, 2vw, 18px);
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%; /* 28.8px */
+    letter-spacing: 0.72px;
+  }
+  .PHASE{
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Helvetica Now Display";
+    font-size: clamp(15px, 2vw, 20px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 32px */
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+  }
+  .VERIFICATION{
+    color: #08090B;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Helvetica Now Display";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 60.8px */
+    letter-spacing: 1.52px;
+    text-transform: uppercase;
+  }
+  .roundbordercard{
+    width: 100%;
+    height: 157px;
+    transform: rotate(3.579deg);
+    flex-shrink: 0;
+    border-radius: 0px 0px 64px 64px;
+    background: linear-gradient(154deg, #C0FC04 16.42%, #9DCF01 83.58%);
+  }
+  .roundbordercard2{
+    width: 523px;
+    height: 157px;
+    transform: rotate(3.579deg);
+    flex-shrink: 0;
+    border-radius: 0px 0px 64px 64px;
+    background: rgba(192, 252, 4, 0.20);
+  }
+  .challenfunding{
+    border-radius: 104px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: linear-gradient(90deg, rgba(15, 16, 18, 0.10) 0%, rgba(15, 16, 18, 0.70) 53.5%, rgba(15, 16, 18, 0.10) 100%);
+    padding: clamp(15px, 2vw, 20px) clamp(25px, 4vw, 40px);
+    color: var(--Paragraph, #9C9D9F);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Helvetica Now Display";
+    font-size: clamp(15px, 2vw, 24px);
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%; /* 38.4px */
+    letter-spacing: 0.96px;
+  }
+  .challenfunding:hover{
+    border-radius: 104px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: linear-gradient(90deg, rgba(192, 252, 4, 0.01) 0%, rgba(192, 252, 4, 0.06) 53.57%, rgba(192, 252, 4, 0.01) 100%);
+    color: #C0FC04;
+  }
+  .accouno{
+    color: #9C9D9F;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "PP Mori";
+    font-size: clamp(15px, 2vw, 24px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 38.4px */
+    letter-spacing: 0.96px;
+  }
+  .overlayheader{
+    background: linear-gradient(180deg, rgba(8, 9, 11, 0.00) 7.02%, #08090B 82.9%);
+  }
+  .roundermine{
+    border-radius: 104px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: linear-gradient(90deg, rgba(15, 16, 18, 0.10) 0%, rgba(15, 16, 18, 0.70) 53.5%, rgba(15, 16, 18, 0.10) 100%);
+  }
+  /* .roundermine{
+    border-radius: 104px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  } */
+  .copyriteblackwell{
+    color: #CBC5C3;
+    text-align: center;
+    font-family: "Inter";
+    font-size: 14px;
+    font-size: clamp(8px, 1vw, 14px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 18.2px */
+    padding: clamp(16px, 3vw, 24px) 0px;
+  }
+  .footeraddres{
+    color: #FFFCFB;
+    font-family: "Open Sans";
+    font-size: clamp(15px, 2vw, 20px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 26px */
+  }
+  .imailsection{
+    color: #CBC5C3;
+    font-family: "Inter";
+    font-size: clamp(12px, 2vw, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 20.8px */
+  }
+  .emaillivechat{
+    color: #0C0C0C;
+    font-family: "Inter";
+    font-size: clamp(12px, 2vw, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 20.8px */
+  }
+  .hoursrlastone{
+    color: #0C0C0C;
+    font-family: "Open Sans";
+    font-size: clamp(15px, 2vw, 20px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+  }
+  .sbumitbuttonform{
+    display: flex;
+    padding: clamp(12px, 2vw, 16px) clamp(17px, 2vw, 32px);
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: clamp(12px, 2vw, 18px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    background: #0C0C0C;
+  }
+  .stylinlgfrom{
+    display: flex;
+    padding: clamp(12px, 2vw, 16px) 0px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-bottom: 1px solid #E3E0E0;
+    background: rgba(191, 191, 191,0);
+  }
+  .outlingstylirom{
+    color: #BFBFBF;
+    font-family: "Inter";
+    font-size: clamp(12px, 2vw, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+  }
+  .lableyourname{
+    color: #0C0C0C;
+    font-family: "Inter";
+    font-size: clamp(12px, 2vw, 18px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+  }
+  .usingconstoem{
+    padding: clamp(15px, 2vw, 22px) clamp(18px, 3vw, 26px);
+  }
+  .specialized{
+    padding: clamp(12px, 2vw, 16px) clamp(18px, 3vw, 26px) clamp(15px, 2vw, 20px) clamp(18px, 3vw, 26px);
+    background: #FFFCFB;
+    color: #0C0C0C;
+    font-family: "Inter";
+    font-size: clamp(12px, 2vw, 16px);
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%; /* 24px */
+  }
+  .dcontretee{
+    font-family: "Open Sans";
+    font-size: clamp(12px, 2vw, 20px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 26px */
+  }
+  .togglebarbackground{
+    display: flex;
+    align-items: flex-start;
+  }
+  .loweringcost{
+    border: 1px solid #F9F9F9;
+    background: rgba(249, 249, 249, 0.08);
+    padding: clamp(7px, 1vw, 12px) clamp(18px, 2vw, 24px);
+    color: #F9F9F9;
+    font-family: Inter;
+    font-size: clamp(10px, 2vw, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    transition: .5s;
+  }
+  .loweringcost:hover{
+    border: 1px solid #EC784F;
+    background: #EC784F;
+    padding: clamp(7px, 1vw, 12px) clamp(18px, 2vw, 24px);
+    color: #F9F9F9;
+    font-family: Inter;
+    font-size: clamp(10px, 2vw, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+  }
+  .fortocinvester{
+    color: #FFFCFB;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Open Sans";
+    font-size: clamp(18px, 2vw, 24px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+  }
+  .fucdercdd{
+    color: #FFF;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Open Sans";
+    font-size: clamp(10px, 2vw, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+  }
+  .sailfzsodnd{
+    color: #FFF;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: clamp(12px, 2vw, 20px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+  }
+  .sliderButton{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: clamp(8px, 1vw, 16px);
+    border: 1px solid rgba(12, 12, 12, 0.10);
+  }
+  .sliderButton span{
+    color: #FFF;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Open Sans";
+    font-size: clamp(12px, 2vw, 20px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 26px */
+  }
+  .customaioruteam{
+    color: #434040;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+  }
+  .deputehof{
+    color: #655E5C;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Open Sans";
+    font-size: clamp(12px, 2vw, 20px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+  }
+  .kasperlas{
+    color: #0C0C0C;
+    font-family: "Open Sans";
+    font-size: clamp(18px, 2vw, 23px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+  .prointeradvaf{
+    color: #3E3B3A;
+    font-family: "Open Sans";
+    font-size: clamp(10px, 2vw, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+  }
+.scrollbar-custom::-webkit-scrollbar {
+  width: 0px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: none;
+  border-radius: 4px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background-color: none;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background-color: none;
+}
+
+  .constructionparea{
+    color: #E4E1E1;
+    font-family: "Inter";
+    font-size: clamp(10px, 2vw, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+  }
+  .adfeer {
+    position: relative;
+  }
+  
+  .adfeer::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    background: #EC784F;
+    height: 4px;
+    width: 0; /* Initial width is 0 */
+    transition: width 0.3s ease-in-out; /* Animation for width change */
+  }
+  
+  .adfeer::before {
+    width: 100%; /* Width becomes 100% on hover */
+  }
+  .ecofir{
+    font-family: "Inter";
+    font-size: clamp(13px, 2vw, 19px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 33px */
+    padding-left: clamp(10px, 2vw, 15px);
+    padding-right: clamp(13px , 2vw, 20px);
+  }
+  .conceoferes{
+    color: #E4E1E1;
+    font-family: "Inter";
+    font-size: clamp(12px, 2vw, 20px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+  }
+  .buildp{
+    color: #655E5C;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    font-size: clamp(10px, 2vw, 16px);
+  }
+  .contaienraas3d{
+    color: #23201F;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 36px */
+  }
+  .threeime{
+    background: #FFF;
+    padding: clamp(17px,2vw,32px);
+  }
+  .catagroyimagess{
+    color: #23201F;
+    font-family: "Open Sans";
+    font-size: clamp(17px,2vw,32px);
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+  }
+  .aboutus{
+    color: #EC784F;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 31.2px */
+    text-transform: uppercase;
+    
+  }
+  .blackwell{
+    color: #3E3B3A;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    font-size: clamp(17px,2vw,32px);
+  }
+  .usingptag{
+    color: #D3D0CF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    font-size: clamp(10px, 2vw, 16px);
+  }
+  .revoluction{
+    color: #FFFCFB;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+  }
+  .catagroyimage{
+    color: #FFFCFB;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%; 
+  }
+  .buttonstli{
+    color: #08090B;
+    font-family: "PP Mori";
+    font-size: clamp(12px, 2vw, 20px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 80px;
+    background: #C0FC04;
+    backdrop-filter: blur(12px);
+    display: flex;
+    padding: clamp(10px, 2vw, 16px) clamp(17px,2vw,32px);
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  .Printing{
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Helvetica Now Display";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115%; /* 96.6px */
+    letter-spacing: 3.36px;
+    background: radial-gradient(63.35% 163.11% at 50% 13.66%, #FFF 0%, #474848 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .Construction{
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "PP Mori";
+    font-size: clamp(16px, 3vw, 24px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.96px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #ABE004 0%, #C0FC04 51%, #ABE004 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .Link-manu-bar{
+    color: #9C9D9F;
+    font-family: "PP Mori";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
+  .contactusbtn{
+    color: var(--Text-white, #FEFFFF);
+    font-family: "PP Mori";
+    font-size: clamp(12px, 2vw, 20px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    border-radius: 72px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+  }
 }
