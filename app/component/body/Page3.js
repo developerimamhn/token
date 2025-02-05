@@ -14,7 +14,6 @@ import image10 from "../image/image10.png";
 import image11 from "../image/image11.png";
 import image12 from "../image/image12.png";
 
-// Store images in an array
 const images = [
   { src: image4, caption: "Image 1" },
   { src: image5, caption: "Image 2" },
@@ -141,8 +140,8 @@ const Page3 = () => {
                     <button className='buttonstli'>Start CTI Challenge
                     </button>
                 </div>
-                <div className='flex-1 relative'>
-                <svg className='absolute top-0 left-0 ' viewBox="0 0 977 571" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div className='flex-1 relative overflow-hidden'>
+                <svg className='absolute top-0 left-0 dots' viewBox="0 0 977 571" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path className='animate-zoom' d="M552.141 439.209C552.141 437.716 553.386 436.472 555.003 436.472C556.496 436.472 557.74 437.716 557.74 439.209C557.74 440.826 556.496 442.07 555.003 442.07C553.386 442.07 552.141 440.826 552.141 439.209Z" fill="white" fill-opacity="0.16"/>
 <path className='animate-zoom' d="M295.727 534.758C295.727 533.265 296.971 532.021 298.464 532.021C300.082 532.021 301.326 533.265 301.326 534.758C301.326 536.375 300.082 537.619 298.464 537.619C296.971 537.619 295.727 536.375 295.727 534.758Z" fill="white" fill-opacity="0.16"/>
 <path className='animate-zoom' d="M370.501 446.799C370.501 445.306 371.745 444.062 373.238 444.062C374.731 444.062 375.975 445.306 375.975 446.799C375.975 448.417 374.731 449.661 373.238 449.661C371.745 449.661 370.501 448.417 370.501 446.799Z" fill="white" fill-opacity="0.16"/>

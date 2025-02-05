@@ -4,10 +4,10 @@ const Page6 = () => {
     return (
         <div>
             <div className='bg-[#000]'>
-                <div className='container mx-auto pt-[40px] md:pt-[60px] lg:pt-[90px] xl:pt-[120px] 2xl:pt-[154px] pb-[35px] sm:pb-[44px] md:pb-[54px] lg:pb-[64px] xl:pb-[74px] 2xl:pb-[84px]'>
+                <div className='container mx-auto pt-[40px] md:pt-[60px] lg:pt-[90px] xl:pt-[120px] 2xl:pt-[154px] pb-[35px] sm:pb-[44px] md:pb-[54px] lg:pb-[64px] xl:pb-[74px] 2xl:pb-[84px] '>
                     <div className='getfounder py-[35px] sm:py-[44px] md:py-[54px] lg:py-[64px] xl:py-[74px] 2xl:py-[84px] relative flex-col flex justify-center items-center overflow-hidden'>
-                    <svg className='h-full absolute top-0' viewBox="0 0 832 431" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path className='animate-zoom' d="M462.994 336.905C462.994 335.726 463.977 334.744 465.255 334.744C466.434 334.744 467.416 335.726 467.416 336.905C467.416 338.183 466.434 339.166 465.255 339.166C463.977 339.166 462.994 338.183 462.994 336.905Z" fill="white" fill-opacity="0.16"/>
+                    <svg className='h-full absolute top-0 dots animate-zoom' viewBox="0 0 832 431" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path className='' d="M462.994 336.905C462.994 335.726 463.977 334.744 465.255 334.744C466.434 334.744 467.416 335.726 467.416 336.905C467.416 338.183 466.434 339.166 465.255 339.166C463.977 339.166 462.994 338.183 462.994 336.905Z" fill="white" fill-opacity="0.16"/>
                             <path className='animate-zoom' d="M260.468 412.374C260.468 411.194 261.451 410.212 262.63 410.212C263.907 410.212 264.89 411.194 264.89 412.374C264.89 413.651 263.907 414.634 262.63 414.634C261.451 414.634 260.468 413.651 260.468 412.374Z" fill="white" fill-opacity="0.16"/>
                             <path className='animate-zoom' d="M319.527 342.9C319.527 341.721 320.51 340.738 321.689 340.738C322.868 340.738 323.851 341.721 323.851 342.9C323.851 344.178 322.868 345.16 321.689 345.16C320.51 345.16 319.527 344.178 319.527 342.9Z" fill="white" fill-opacity="0.16"/>
                             <path className='animate-zoom' d="M190.798 329.241C190.798 328.062 191.78 327.08 192.96 327.08C194.237 327.08 195.22 328.062 195.22 329.241C195.22 330.421 194.237 331.403 192.96 331.403C191.78 331.403 190.798 330.421 190.798 329.241Z" fill="white" fill-opacity="0.16"/>

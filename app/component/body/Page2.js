@@ -2,14 +2,14 @@ import React from 'react';
 
 const Page2 = () => {
     return (
-        <div className='bg-[#08090B] py-[40px] md:py-[60px] lg:py-[90px] xl:py-[120px] 2xl:py-[150px]'>
+        <div className='bg-[#08090B] pb-[40px] md:pb-[60px] lg:pb-[90px] xl:pb-[120px] 2xl:pb-[150px] pt-[25px] md:pt-[30px] lg:pt-[40px] xl:pt-[50px] 2xl:pt-[64px]'>
             <div className='container mx-auto'>
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[18px] lg:gap-[25px] px-[24px] sm:px-[0]'>
                     <div className='col-span-1'>
                         <div className="relative overflow-hidden bg-[#0F1012]">
                             <div className="relative group ">
                                 <span className='VERIFICATION text-[28px] md:text-[20px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px] !w-full absolute left-[50%] top-[50%] transform -translate-x-[50%] -translate-y-[70%] transition-transform duration-300 ease-in-out !text-[#FEFFFF]'>Sky Challenge</span>
-                                <svg width="100%" className='h-[112px] 2xl:h-[132px]' viewBox="0 0 523 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="100%" className='h-[112px] 2xl:h-[132px] ' viewBox="0 0 523 132" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M-3.39844 -25.3298L521.587 -58.1751L523.398 -29.2317C527.166 30.9903 529.049 61.1013 511.511 80.9804C493.973 100.859 463.862 102.743 403.64 106.511L134.155 123.371C73.9332 127.139 43.8222 129.023 23.9431 111.485C4.064 93.9466 2.18013 63.8356 -1.58762 3.61357L-3.39844 -25.3298Z" fill="#252628"/>
 <path d="M-3.86038 -33.0503L517.121 -65.6451L518.901 -37.2007C520.785 -7.07556 522.195 15.4682 520.947 32.9672C519.701 50.4518 515.806 62.8248 507.138 72.6494C498.471 82.474 486.68 87.881 469.487 91.2969C452.279 94.7156 429.736 96.1271 399.611 98.0119L133.132 114.684C103.007 116.569 80.463 117.978 62.9639 116.731C45.4793 115.484 33.1063 111.589 23.2817 102.922C13.4571 94.2539 8.05013 82.4629 4.63421 65.2699C1.21546 48.0628 -0.196024 25.5192 -2.08078 -4.60588L-3.86038 -33.0503Z" fill="url(#paint0_linear_588_596)"/>
 <path d="M-3.86038 -33.0503L517.121 -65.6451L518.901 -37.2007C520.785 -7.07556 522.195 15.4682 520.947 32.9672C519.701 50.4518 515.806 62.8248 507.138 72.6494C498.471 82.474 486.68 87.881 469.487 91.2969C452.279 94.7156 429.736 96.1271 399.611 98.0119L133.132 114.684C103.007 116.569 80.463 117.978 62.9639 116.731C45.4793 115.484 33.1063 111.589 23.2817 102.922C13.4571 94.2539 8.05013 82.4629 4.63421 65.2699C1.21546 48.0628 -0.196024 25.5192 -2.08078 -4.60588L-3.86038 -33.0503Z" stroke="white" stroke-opacity="0.08"/>

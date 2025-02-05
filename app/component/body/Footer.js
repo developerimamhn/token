@@ -73,40 +73,40 @@ const Footer = () => {
                     <div className='col-span-6 sm:col-span-8 grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 justify-center gap-[30px]'>
                     <div className='col-span-2 flex sm:justify-center'>
                         <ul classsName='flex flex-col feature'>
-                            <li className='compais mb-[16px] md:mb-[22px] xl:mb-[28px] feature'>Funding Programs</li>
-                            <li className='meedicalkitslist mb-[8px] md:mb-[12px] xl:mb-[16px] feature'>2-Step</li>
-                            <li className='meedicalkitslist mb-[8px] md:mb-[12px] xl:mb-[16px] feature'>1-Step</li>
-                            <li className='meedicalkitslist mb-[8px] md:mb-[12px] xl:mb-[16px] feature'>No-evaluation</li>
-                            <li className='meedicalkitslist feature mb-[8px] md:mb-[12px] xl:mb-[16px]'>Success stories</li>
-                            <li className='meedicalkitslist feature '>Become an affiliate</li>
+                            <li className='compais mb-[16px] md:mb-[22px] hover:text-[#ABE004] duraction-300 xl:mb-[28px] feature'>Funding Programs</li>
+                            <li className='meedicalkitslist hover:text-[#ABE004] duraction-300 mb-[8px] md:mb-[12px] xl:mb-[16px] feature'>2-Step</li>
+                            <li className='meedicalkitslist hover:text-[#ABE004] duraction-300 mb-[8px] md:mb-[12px] xl:mb-[16px] feature'>1-Step</li>
+                            <li className='meedicalkitslist hover:text-[#ABE004] duraction-300 mb-[8px] md:mb-[12px] xl:mb-[16px] feature'>No-evaluation</li>
+                            <li className='meedicalkitslist hover:text-[#ABE004] duraction-300 feature mb-[8px] md:mb-[12px] xl:mb-[16px]'>Success stories</li>
+                            <li className='meedicalkitslist feature hover:text-[#ABE004] duraction-300'>Become an affiliate</li>
                         </ul>
                     </div>
                     
                     <div className='col-span-2 flex sm:justify-center'>
                         <ul classsName='flex flex-col feature'>
-                            <li className='compais mb-[16px] md:mb-[22px] xl:mb-[28px]'>Resources</li>
-                            <li className='meedicalkitslist mb-[8px] md:mb-[12px] xl:mb-[16px] feature'>Academy</li>
-                            <li className='meedicalkitslist mb-[8px] md:mb-[12px] xl:mb-[16px] feature'>FAQs</li>
-                            <li className='meedicalkitslist mb-[8px] md:mb-[12px] xl:mb-[16px] feature'>Blog</li>
-                            <li className='meedicalkitslist mb-[8px] md:mb-[12px] xl:mb-[16px]'>Calculators</li>
-                            <li className='meedicalkitslist '>Sky trade manager</li>
+                            <li className='compais mb-[16px] md:mb-[22px] xl:mb-[28px] hover:text-[#ABE004] duraction-300'>Resources</li>
+                            <li className='meedicalkitslist hover:text-[#ABE004] duraction-300 mb-[8px] md:mb-[12px] xl:mb-[16px] feature'>Academy</li>
+                            <li className='meedicalkitslist hover:text-[#ABE004] duraction-300 mb-[8px] md:mb-[12px] xl:mb-[16px] feature'>FAQs</li>
+                            <li className='meedicalkitslist hover:text-[#ABE004] duraction-300 mb-[8px] md:mb-[12px] xl:mb-[16px] feature'>Blog</li>
+                            <li className='meedicalkitslist hover:text-[#ABE004] duraction-300 mb-[8px] md:mb-[12px] xl:mb-[16px]'>Calculators</li>
+                            <li className='meedicalkitslist hover:text-[#ABE004] duraction-300 '>Sky trade manager</li>
                         </ul>
                     </div>
                     <div className='col-span-2 flex sm:justify-center'>
                         <ul classsName='flex flex-col feature'>
-                            <li className='compais mb-[16px] md:mb-[22px] xl:mb-[28px] feature'>More</li>
-                            <li className='meedicalkitslist mb-[8px] md:mb-[12px] xl:mb-[16px] feature'>About us</li>
-                            <li className='meedicalkitslist mb-[8px] md:mb-[12px] xl:mb-[16px] feature'>Partners</li>
-                            <li className='meedicalkitslist mb-[8px] md:mb-[12px] xl:mb-[16px] feature'>Media kit</li>
-                            <li className='meedicalkitslist mb-[8px] md:mb-[12px] xl:mb-[16px] feature'>Merchandise</li>
-                            <li className='meedicalkitslist '>Symbols specifications</li>
+                            <li className='compais mb-[16px] md:mb-[22px] xl:mb-[28px] feature hover:text-[#ABE004] duraction-300'>More</li>
+                            <li className='meedicalkitslist hover:text-[#ABE004] duraction-300 mb-[8px] md:mb-[12px] xl:mb-[16px] feature'>About us</li>
+                            <li className='meedicalkitslist hover:text-[#ABE004] duraction-300 mb-[8px] md:mb-[12px] xl:mb-[16px] feature'>Partners</li>
+                            <li className='meedicalkitslist hover:text-[#ABE004] duraction-300 mb-[8px] md:mb-[12px] xl:mb-[16px] feature'>Media kit</li>
+                            <li className='meedicalkitslist hover:text-[#ABE004] duraction-300 mb-[8px] md:mb-[12px] xl:mb-[16px] feature'>Merchandise</li>
+                            <li className='meedicalkitslist hover:text-[#ABE004] duraction-300 '>Symbols specifications</li>
                         </ul>
                     </div>
                     <div className='col-span-2 flex sm:justify-centercenter'>
                         <ul classsName='flex flex-col feature'>
-                            <li className='compais mb-[16px] md:mb-[22px] xl:mb-[28px] feature'>Contact</li>
-                            <li className='meedicalkitslist mb-[8px] md:mb-[12px] xl:mb-[16px] feature'>Dubai silicon oasis, DDP, building A2, dubai, united arab emirates.</li>
-                            <li className='meedicalkitslist mb-[8px] md:mb-[12px] xl:mb-[16px] feature'>Support@example@gmail.com</li>
+                            <li className='compais mb-[16px] md:mb-[22px] xl:mb-[28px] feature hover:text-[#ABE004] duraction-300'>Contact</li>
+                            <li className='meedicalkitslist mb-[8px] md:mb-[12px] xl:mb-[16px] feature hover:text-[#ABE004] duraction-300'>Dubai silicon oasis, DDP, building A2, dubai, united arab emirates.</li>
+                            <li className='meedicalkitslist mb-[8px] md:mb-[12px] xl:mb-[16px] feature hover:text-[#ABE004] duraction-300'>Support@example@gmail.com</li>
                         </ul>
                     </div>
                     </div>
