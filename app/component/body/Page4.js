@@ -1,4 +1,6 @@
-import React from 'react';
+"use client"
+
+import React,{useEffect} from 'react';
 import Image from 'next/image';
 import image13 from '../image/image13.png';
 import image16 from '../image/image16.png';
@@ -6,9 +8,28 @@ import image14 from '../image/image14.png';
 import image15 from '../image/image15.png';
 
 const Page4 = () => {
+    useEffect(() => {
+        const handleScroll = () => {
+          const features = document.querySelectorAll('.feature');
+          const windowHeight = window.innerHeight;
+    
+          features.forEach((feature) => {
+            const featurePosition = feature.getBoundingClientRect().top;
+    
+            if (featurePosition < windowHeight - 100) {
+              feature.classList.add('visible');
+            }
+          });
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+    
+        // Cleanup the event listener on component unmount
+        return () => window.removeEventListener('scroll', handleScroll);
+      }, []);
     return (
         <div className='!bg-[#000000] '>
-            <div className='relative '> 
+            <div className='relative feature'> 
                 <div className=' pr-[10%]'>
                     <div className='flex justify-between items-center lg:flex-row flex-col lg:gap-0 gap-[30px]'>
                         <div className=''>

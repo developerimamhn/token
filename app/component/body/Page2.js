@@ -1,10 +1,31 @@
-import React from 'react';
+"use client"
+
+import React,{useEffect} from 'react';
 
 const Page2 = () => {
+    useEffect(() => {
+        const handleScroll = () => {
+          const features = document.querySelectorAll('.feature');
+          const windowHeight = window.innerHeight;
+    
+          features.forEach((feature) => {
+            const featurePosition = feature.getBoundingClientRect().top;
+    
+            if (featurePosition < windowHeight - 100) {
+              feature.classList.add('visible');
+            }
+          });
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+    
+        // Cleanup the event listener on component unmount
+        return () => window.removeEventListener('scroll', handleScroll);
+      }, []);
     return (
         <div className='bg-[#08090B] pb-[40px] md:pb-[60px] lg:pb-[90px] xl:pb-[120px] 2xl:pb-[150px] pt-[25px] md:pt-[30px] lg:pt-[40px] xl:pt-[50px] 2xl:pt-[64px]'>
             <div className='container mx-auto'>
-                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[18px] lg:gap-[25px] px-[24px] sm:px-[0]'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[18px] lg:gap-[25px] px-[24px] sm:px-[0] feature'>
                     <div className='col-span-1'>
                         <div className="relative overflow-hidden bg-[#0F1012]">
                             <div className="relative group ">

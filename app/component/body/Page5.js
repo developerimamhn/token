@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import Image from 'next/image';
 import image17 from "../image/image17.png";
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -13,9 +13,29 @@ import { Navigation } from 'swiper/modules';
 
 
 const Page5 = () => {
+
+    useEffect(() => {
+        const handleScroll = () => {
+          const features = document.querySelectorAll('.feature');
+          const windowHeight = window.innerHeight;
+    
+          features.forEach((feature) => {
+            const featurePosition = feature.getBoundingClientRect().top;
+    
+            if (featurePosition < windowHeight - 100) {
+              feature.classList.add('visible');
+            }
+          });
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+    
+        // Cleanup the event listener on component unmount
+        return () => window.removeEventListener('scroll', handleScroll);
+      }, []);
     return (
         <div className='bg-[#08090B]'>
-            <div className='py-[40px] md:py-[60px] lg:py-[90px] xl:py-[120px] 2xl:py-[154px]'>
+            <div className='py-[40px] md:py-[60px] lg:py-[90px] xl:py-[120px] 2xl:py-[154px] feature'>
                 <div className=''>
                     <h2 className='treaderssteestee text-[35px] md:text-[40px] lg:text-[44px] xl:text-[55px] 2xl:text-[64px]'>Traders Testimonials</h2>
                     <p className='tradingskils mt-[20px] md:mt-[25px] lg:mt-[30px] xl:mt-[35px] 2xl:mt-[40px]'>Don't let your trading skills go unrewarded. prove yourself <br className='mb:block hidden'/> and secure funding with our risk-free plans.</p>

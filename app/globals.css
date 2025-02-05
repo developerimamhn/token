@@ -70,6 +70,70 @@ body {
 }
 
 @layer utilities {
+
+  .feature {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .feature.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .featureleft {
+    opacity: 0;
+    transform: translatey(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .featureleft.visibleleft {
+    opacity: 1;
+    transform: translatex(0);
+  }
+  
+  .fatchanimaction{
+    animation-name: example;
+    animation-duration: 1s;
+  }
+  
+  @keyframes example {
+    from {
+      transform: translatex(150px);
+    }
+    to {
+      transform: translatex(0);
+    }
+  }
+  
+  .fatchanimactionright{
+    animation-name: exampleright;
+    animation-duration: 1s;
+  }
+  
+  @keyframes exampleright {
+    from {
+      transform: translatey(200px);
+    }
+    to {
+      transform: translatey(0);
+    }
+  }
+  
+  .fatchanimactionnavaction{
+    animation-name: examplenavaction;
+    animation-duration: 1s;
+  }
+  
+  @keyframes examplenavaction {
+    from {
+      opacity:0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
   .privacypolicy{
     color: #FFF;
     leading-trim: both;

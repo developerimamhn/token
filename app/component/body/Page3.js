@@ -43,9 +43,28 @@ const Page3 = () => {
   
       generateDots();
     }, []);
+    useEffect(() => {
+        const handleScroll = () => {
+          const features = document.querySelectorAll('.feature');
+          const windowHeight = window.innerHeight;
+    
+          features.forEach((feature) => {
+            const featurePosition = feature.getBoundingClientRect().top;
+    
+            if (featurePosition < windowHeight - 100) {
+              feature.classList.add('visible');
+            }
+          });
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+    
+        // Cleanup the event listener on component unmount
+        return () => window.removeEventListener('scroll', handleScroll);
+      }, []);
     return (
         <div className='bg-gradient-to-b from-[#08090B] to-[#08090B] pt-[40px] md:pt-[60px] lg:pt-[90px] xl:pt-[120px] 2xl:pt-[154px]'>
-            <div className='container mx-auto'>
+            <div className='container mx-auto feature'>
                 <div className='flex items-center lineritems gap-[30px] md:flex-row flex-col'>
                     <div className='flex items-start flex-1 flex-col'>
                     <h2 className='Printing !text-[25px] sm:!text-[30px] md:!text-[40px] lg:!text-[45px] xl:!text-[55px] 2xl:!text-[64px] !text-start'>Why trading with our prop firm</h2>
@@ -394,7 +413,7 @@ const Page3 = () => {
                 </div>
                 </div>
                 <div>
-                    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[16px] lg:gap-[20px] mt-[18px] md:mt-[24px] xl:mt-[32px]'>
+                    <div className='feature grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[16px] lg:gap-[20px] mt-[18px] md:mt-[24px] xl:mt-[32px]'>
                         <div className='flex flex-justify-center items-start gap-[16px] md:gap-[20px] xl:gap-[24px] salarypointheader '>
                             <div> 
                                 <svg className='w-[35px] sm:w-[40px] lg:w-[50px] 2xl:w-[64px]' viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -586,7 +605,7 @@ const Page3 = () => {
                 <div className='py-[40px] md:py-[60px] lg:py-[90px] xl:py-[120px] 2xl:py-[154px]'>
                 <div className="flex flex-row  items-center flex-wrap gap-[20px] lg:gap-[30px] 2xl:gap-[40px] overflow-auto px-[24px] sm:px-[0]">
                 {images.map((image, index) => (
-                <div key={index} className="flex flex-col items-center">
+                <div key={index} className="flex flex-col items-center feature">
                     <Image
                         src={image.src}
                         alt={image.caption}
