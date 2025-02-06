@@ -30,13 +30,13 @@ const Page4 = () => {
     return (
         <div className='!bg-[#000000] '>
             <div className='relative feature'> 
-                <div className=' pr-[10%]'>
+                <div className=' '>
                     <div className='flex justify-between items-center lg:flex-row flex-col lg:gap-0 gap-[30px]'>
-                        <div className=''>
+                        <div className='flex-1'>
                             <Image className='h-full w-full' src={image13} alt=''/>
-                        </div >
-                        <div className='flex-1 flex justify-end px-[24px] sm:px-[0]'> 
-                        <div className='flex items-start flex-1 flex-col xl:py-[40px] 2xl:py-[60px]'>
+                        </div>
+                        <div className='flex-1 flex justify-end px-[24px] sm:px-[0] '> 
+                        <div className='flex items-start flex-1 flex-col xl:py-[40px] 2xl:py-[60px] xl:pr-[15%] 2xl:pr-[30%]'>
                     <h2 className='Printing !text-[25px] sm:!text-[30px] md:!text-[40px] lg:!text-[45px] xl:!text-[55px] 2xl:!text-[64px] !text-start'>Secure funding with us all in one tools</h2>
                     <p className='sinceyear mt-[16px] sm:mt-[20px] lg:mt-[32px]'>Don't let your trading skills go unrewarded. prove yourself and secure funding with our risk-free plans.</p>
                     <div className='borderder my-[20px] sm:my-[25px] lg:my-[32px]'></div>

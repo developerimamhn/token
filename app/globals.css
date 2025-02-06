@@ -153,8 +153,8 @@ body {
     font-size: clamp(12px, 2vw, 20px);
     font-style: normal;
     font-weight: 400;
-    line-height: 110%; /* 22px */
-    opacity: 0.8;
+    line-height: 110%;
+    opacity: 80% !important;
   }
   .compais{
     color: #FFF;
@@ -163,7 +163,7 @@ body {
     font-family: "PP Mori";
     font-size: clamp(15px, 2vw, 24px);
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 110%; /* 26.4px */
   }
   .lastpadding{
@@ -271,7 +271,7 @@ body {
     font-family: "PP Mori";
     font-size: clamp(17px, 2vw, 28px);
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: normal;
   }
   .boxinglastbg{
@@ -295,7 +295,7 @@ body {
     font-family: "PP Mori";
     font-size: clamp(17px, 2vw, 28px);
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: normal;
   }
   .salarypointerpa{
@@ -305,7 +305,7 @@ body {
     font-family: "PP Mori";
     font-size: clamp(15px, 2vw, 20px);
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 150%; /* 30px */
   }
   @keyframes float {
@@ -339,7 +339,7 @@ body {
     font-family: "PP Mori";
     font-size: clamp(15px, 2vw, 20px);
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: normal;
   }
   .yearsnamess{
@@ -923,7 +923,7 @@ background: var(--Text-white, #FEFFFF);
     color: #9C9D9F;
     font-family: "PP Mori";
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 100%;
   }
   .contactusbtn{
