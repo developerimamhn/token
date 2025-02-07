@@ -1,7 +1,7 @@
 "use client";
 
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState,useRef } from 'react';
 import Image from 'next/image';
 import image3 from '../image/image3.png';
 import image4 from "../image/image4.png";
@@ -62,11 +62,18 @@ const Page3 = () => {
         // Cleanup the event listener on component unmount
         return () => window.removeEventListener('scroll', handleScroll);
       }, []);
+      const sliderRef = useRef(null);
+
+  useEffect(() => {
+    const slider = sliderRef.current;
+    let clone = slider.innerHTML;
+    slider.innerHTML += clone; // Duplicate logos for seamless looping
+  }, []);
     return (
         <div className='bg-gradient-to-b from-[#08090B] to-[#08090B] pt-[40px] md:pt-[60px] lg:pt-[90px] xl:pt-[120px] 2xl:pt-[154px]'>
             <div className='container mx-auto feature'>
-                <div className='flex items-center lineritems gap-[30px] md:flex-row flex-col'>
-                    <div className='flex items-start flex-1 flex-col'>
+                <div className='flex items-center lineritems gap-[30px] md:flex-row flex-col '>
+                    <div className='flex items-start flex-1 flex-col py-[30px] 2xl:py-0'>
                     <h2 className='Printing !text-[25px] sm:!text-[30px] md:!text-[40px] lg:!text-[45px] xl:!text-[55px] 2xl:!text-[64px] !text-start'>Why trading with our prop firm</h2>
                     <div className='grid grid-cols-1 lg:grid-cols-2 flex-1 gap-[14px] lg:gap-[24px] pt-[20px] md:pt-[25px] lg:pt-[30px] xl:pt-[35px] 2xl:pt-[40px]'>
                         <div className='flex justify-start items-center gap-[10px] lg:gap-[16px] listingpoint'><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -409,7 +416,7 @@ const Page3 = () => {
 <path className='animate-zoom' d="M510.338 318.031C510.338 317.533 510.711 317.16 511.209 317.16C511.707 317.16 512.08 317.533 512.08 318.031C512.08 318.404 511.707 318.902 511.209 318.902C510.711 318.902 510.338 318.404 510.338 318.031Z" fill="white" fill-opacity="0.16"/>
 </svg>
 
-                    <Image className='w-full' src={image3} alt=''/>
+                    <Image className='w-full ' src={image3} alt=''/>
                 </div>
                 </div>
                 <div>
@@ -603,17 +610,19 @@ const Page3 = () => {
                     </div>
                 </div>
                 <div className='py-[40px] md:py-[60px] lg:py-[90px] xl:py-[120px] 2xl:py-[154px]'>
-                <div className="flex flex-row  items-center flex-wrap gap-[20px] lg:gap-[30px] 2xl:gap-[40px] overflow-auto px-[24px] sm:px-[0]">
+                <div className="flex flex-row  items-center flex-wrap overflow-hidden px-[24px] sm:px-[0]">
+                <div ref={sliderRef} className="flex animate-scroll items-center gap-[20px] lg:gap-[30px] 2xl:gap-[40px]">
                 {images.map((image, index) => (
-                <div key={index} className="flex flex-col items-center feature">
+                <div key={index} className="flex flex-col items-center feature w-[150px] ">
                     <Image
                         src={image.src}
                         alt={image.caption}
-                        className="grayscale "
+                        className="grayscale"
+                        
                     />
                     </div>
                 ))}
-                </div>
+                </div></div>
                 </div>
             </div>
         </div>
