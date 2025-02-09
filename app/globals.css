@@ -71,6 +71,21 @@ body {
 
 @layer utilities {
 
+  .svg-container {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .svg-path {
+    fill: #252628;
+    transition: fill 0.3s ease-in-out;
+  }
+  
+  .svg-container:hover .svg-path {
+    fill: #C0FC04;
+  }
+  
+
   @keyframes scroll {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
@@ -292,9 +307,10 @@ body {
     border-radius: 32px;
     border: 1px solid rgba(255, 255, 255, 0.08);
     /* background: linear-gradient(101deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.08) 53.5%, rgba(255, 255, 255, 0.02) 100%); */
-    transition: 0.2s;
+    transition: 0.5s;
   }
   .salarypointheader:hover{
+    transition: 0.5s;
     /* border-radius: 32px;
     border: 1px solid rgba(255, 255, 255, 0.08); */
     background: linear-gradient(101deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.08) 53.5%, rgba(255, 255, 255, 0.02) 100%);
@@ -351,7 +367,7 @@ body {
     font-size: clamp(15px, 2vw, 20px);
     font-style: normal;
     font-weight: 600;
-    line-height: normal;
+    line-height: 150%;
   }
   .yearsnamess{
     color: #FFF;

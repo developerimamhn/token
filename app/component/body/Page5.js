@@ -35,7 +35,7 @@ const Page5 = () => {
       }, []);
     return (
         <div className='bg-[#08090B] relative'>
-            <svg className='w-fit absolute left-1/2 transform -translate-x-1/2 top-0' viewBox="0 0 561 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className='h-2/5 absolute left-1/2 transform -translate-x-1/2 top-0' viewBox="0 0 561 280" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="280.5" cy="-0.5" r="280.5" fill="url(#paint0_linear_738_231)" fill-opacity="0.2"/>
 <circle cx="280.5" cy="-0.5" r="280" stroke="white" stroke-opacity="0.05"/>
 <circle cx="280.5" cy="-0.5" r="280" stroke="url(#paint1_linear_738_231)" stroke-opacity="0.2"/>
